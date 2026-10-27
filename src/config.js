@@ -4,8 +4,8 @@
 
 export const config = {
   // ---- Names ----
-  yourName: "Your Name",
-  herName: "Her Name",
+  yourName: "Arush Kashyup",
+  herName: "Arushi Rani",
 
   // ---- Relationship start date ----
   // (Year, Month-1, Day, Hours, Minutes, Seconds)
@@ -22,49 +22,49 @@ export const config = {
   timeline: [
     {
       id: 1,
-      src: "/images/photo1.jpg",
-      caption: "That day you laughed so hard at the bus stop, people stared. Worth it.",
+      src: "/image-1.png",
+      caption: "Casual vibes and cozy layers.",
     },
     {
       id: 2,
-      src: "/images/photo2.jpg",
-      caption: "You defended your Maggi recipe like a PhD thesis. I still think about it.",
+      src: "/image-2.png",
+      caption: "Holding hands and moving forward together.",
     },
     {
       id: 3,
-      src: "/images/photo3.jpg",
-      caption: "First time you fell asleep on my shoulder. I didn't move for 40 minutes.",
+      src: "/image-3.png",
+      caption: "Found my favorite reason to smile.",
     },
     {
       id: 4,
-      src: "/images/photo4.jpg",
-      caption: "Rainy day, no umbrella, both soaked. Best 'bad' plan ever.",
+      src: "/image-4.png",
+      caption: "Partners in crime, locked in and ready.",
     },
     {
       id: 5,
-      src: "/images/photo5.jpg",
-      caption: "The blurry selfie you insisted was 'aesthetic'. It actually was.",
+      src: "/image-5.png",
+      caption: "Silhouettes sharing a quiet moment by the window.",
     },
     {
       id: 6,
-      src: "/images/photo6.jpg",
-      caption: "You rated every dog we saw out of 10. I rated you a 10.",
+      src: "/image-6.png",
+      caption: "Sweet moments with my favorite person.",
     },
   ],
 
-  // ---- Reasons I Love You ----
-  reasons: [
-    "You narrate your own life like a sports commentator.",
-    "You get emotionally attached to every stray dog within 5 metres.",
-    "You remember tiny things I said once, months ago.",
-    "Your '5-minute nap' is a full lifestyle choice.",
-    "You send me reels at 2 AM like it's a national duty.",
-    "You argue with GPS. And win.",
-    "You make ordinary Sundays feel like festivals.",
-    "You have a specific face for every emotion — and I've memorised all of them.",
-    "You defend me before I even explain my side.",
-    "You make my worst days feel 40% smaller.",
-  ],
+// ---- Reasons I Love You ----
+reasons: [
+  "You remember tiny things I mentioned once, months ago, and treat them like gold.",
+  "You defend me before I even explain my side, always being my safest place.",
+  "You make ordinary Sundays feel like little festivals just by being in them.",
+  "You have a specific face for every emotion, and learning them all is my favorite pastime.",
+  "You make my worst days feel infinitely smaller the moment you hold my hand.",
+  "Your 2 AM reel-sending spree is my daily reminder of how constantly I'm on your mind.",
+  "You get so soft and attached to every stray dog we pass, revealing how tender your heart is.",
+  "You narrate your own life with so much cute enthusiasm that I can't help but fall for you more.",
+  "Your '5-minute nap' is the sweetest routine, and watching you rest brings me so much peace.",
+  "You argue with the GPS with total confidence, and somehow, your way always feels right."
+],
 
   // ---- The Love Letter ----
   letter: {

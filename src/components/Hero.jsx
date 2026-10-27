@@ -9,7 +9,7 @@ export default function Hero() {
   useEffect(() => {
     const calculateTime = () => {
       const now = new Date();
-      const start = config.startDate || new Date(2023, 5, 14);
+      const start = config.startDate || new Date(2025, 6, 8);
       const diff = now - start;
 
       if (diff > 0) {
