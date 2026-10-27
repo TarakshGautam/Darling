@@ -4,8 +4,8 @@
 
 export const config = {
   // ---- Names ----
-  yourName: "Arush Kashyup",
-  herName: "Arushi Rani",
+  yourName: "Arushi Rani",
+  herName: "Arush Kashyup",
 
   // ---- Relationship start date ----
   // (Year, Month-1, Day, Hours, Minutes, Seconds)
