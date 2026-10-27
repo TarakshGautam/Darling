@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:wght@400;500;600;700&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --color-blush: #fadadd;
+  --color-cream: #fff8f0;
+  --color-peach: #ffdab9;
+  --color-rose: #e8a0a8;
+  --color-wine: #7b2d3b;
+  --color-ink: #3a2a2e;
+
+  --font-script: "Great Vibes", cursive;
+  --font-body: "Inter", sans-serif;
+}
+
+:root {
+  font-family: var(--font-body);
+  color: var(--color-ink);
+  background: var(--color-cream);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  background: var(--color-cream);
+}
+
+html {
+  scroll-behavior: smooth;
+  scrollbar-color: var(--color-rose) var(--color-cream);
+}
+
+::selection {
+  color: var(--color-wine);
+  background: var(--color-blush);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-wine);
+  outline-offset: 4px;
+}
+
+.romantic-shell {
+  isolation: isolate;
+  background:
+    radial-gradient(ellipse at 12% 9%, rgb(250 218 221 / 55%), transparent 34rem),
+    radial-gradient(ellipse at 92% 38%, rgb(255 218 185 / 38%), transparent 32rem),
+    radial-gradient(ellipse at 50% 100%, rgb(232 160 168 / 20%), transparent 38rem),
+    var(--color-cream);
+}
+
+.ambient-particles {
+  position: fixed;
+  z-index: 0;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  contain: strict;
+}
+
+.ambient-particles span {
+  position: absolute;
+  top: 110%;
+  left: var(--particle-left);
+  color: var(--particle-color);
+  font-family: var(--font-script);
+  font-size: var(--particle-size);
+  line-height: 1;
+  opacity: 0;
+  animation: particle-rise var(--particle-duration) linear infinite;
+  animation-delay: var(--particle-delay);
+  will-change: transform, opacity;
+}
+
+.ambient-particles span:nth-child(1) {
+  --particle-left: 8%;
+  --particle-size: 1.15rem;
+  --particle-color: rgb(123 45 59 / 28%);
+  --particle-duration: 27s;
+  --particle-delay: -12s;
+}
+
+.ambient-particles span:nth-child(2) {
+  --particle-left: 25%;
+  --particle-size: 0.9rem;
+  --particle-color: rgb(232 160 168 / 46%);
+  --particle-duration: 34s;
+  --particle-delay: -23s;
+}
+
+.ambient-particles span:nth-child(3) {
+  --particle-left: 48%;
+  --particle-size: 1.25rem;
+  --particle-color: rgb(123 45 59 / 22%);
+  --particle-duration: 31s;
+  --particle-delay: -7s;
+}
+
+.ambient-particles span:nth-child(4) {
+  --particle-left: 67%;
+  --particle-size: 0.8rem;
+  --particle-color: rgb(232 160 168 / 40%);
+  --particle-duration: 36s;
+  --particle-delay: -19s;
+}
+
+.ambient-particles span:nth-child(5) {
+  --particle-left: 83%;
+  --particle-size: 1.1rem;
+  --particle-color: rgb(123 45 59 / 24%);
+  --particle-duration: 29s;
+  --particle-delay: -3s;
+}
+
+.ambient-particles span:nth-child(6) {
+  --particle-left: 94%;
+  --particle-size: 0.75rem;
+  --particle-color: rgb(232 160 168 / 38%);
+  --particle-duration: 33s;
+  --particle-delay: -15s;
+}
+
+@keyframes particle-rise {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 0, 0) rotate(-12deg);
+  }
+
+  12%,
+  78% {
+    opacity: 0.7;
+  }
+
+  100% {
+    opacity: 0;
+    transform: translate3d(2.5rem, -125vh, 0) rotate(24deg);
+  }
+}
+
+.glass-panel {
+  border: 1px solid rgb(255 255 255 / 62%);
+  background: rgb(255 248 240 / 62%);
+  box-shadow:
+    0 24px 70px rgb(123 45 59 / 8%),
+    inset 0 1px 0 rgb(255 255 255 / 72%);
+  -webkit-backdrop-filter: blur(18px);
+  backdrop-filter: blur(18px);
+}
+
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.preserve-3d {
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+
+.flip-card-inner {
+  transform-style: preserve-3d;
+  transition: transform 700ms cubic-bezier(0.2, 0.75, 0.25, 1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .ambient-particles {
+    display: none;
+  }
+}
