@@ -10,7 +10,7 @@ export const config = {
   // ---- Relationship start date ----
   // (Year, Month-1, Day, Hours, Minutes, Seconds)
   // Note: Month starts from 0 (0 = Jan, 5 = June)
-  startDate: new Date(2023, 5, 14, 18, 30, 0),
+  startDate: new Date(2025, 6, 8, 17, 30, 0),
 
   // ---- Hero tagline ----
   tagline: "Every day with you feels like a favourite song on repeat.",
