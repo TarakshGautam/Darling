@@ -4,7 +4,7 @@
 
 export const config = {
   // ---- Names ----
-  yourName: "Arushi Rani",
+  yourName: "Ayushi Rani",
   herName: "Arush Kashyup",
 
   // ---- Relationship start date ----
